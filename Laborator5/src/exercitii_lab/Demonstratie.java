@@ -40,5 +40,18 @@ public class Demonstratie {
         StringBuilder sirReverse=new StringBuilder(sir).reverse();
         System.out.println("Sirul inversat este: "+sirReverse);
 
+        System.out.println("\n");
+
+        ///DEMONSTRATIE SINGLETON:
+        Singleton singletonInstance1 = Singleton.getInstance();
+        Singleton singletonInstance2 = Singleton.getInstance();
+
+        // Verif daca sunt diferite instantele
+        if (singletonInstance1 == singletonInstance2) {
+            System.out.println("Cele două instanțe sunt identice.");
+        } else {
+            System.out.println("Cele două instanțe sunt diferite.");
+        }
+
     }
 }
